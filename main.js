@@ -11,8 +11,8 @@ function generate() {
 	let result = '';
 
 	for (let index = 0; index < document.getElementById('length').value; index++) {
-		random = Math.floor(Math.random() * arr.length + 1);
-		result += (arr[random]);
+		random = Math.floor(Math.random() * arr.length);
+		result += arr[random];
 	}
 
 	document.querySelector('.pass').textContent = result;
