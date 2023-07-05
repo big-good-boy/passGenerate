@@ -5,17 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Генератор паролей</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="main.js"></script>
 </head>
 <body>
 	<div class="wrapper">
 		<div class="content">
-			<p class="pass">HHqcSMGE</p>
+			<div class="top"><p class="pass"></p><span title="Скопировать" onclick="copy()"></span></div>
 			<form>
-				<p>Длина пароля: <input type="number" name="" id="length" min="8" max="16" value="8"> символов</p>
+				<p>Длина пароля: <input type="number" name="" id="length" min="8" max="16" value="12"> символов</p>
 				<p class="options">
-					<label><input type="checkbox" name="" id=""> спецсимволы</label>
-					<label><input type="checkbox" name="" id=""> пробелы</label>
+					<label><input type="checkbox" name="" id="symbol"> спецсимволы</label>
+					<label><input type="checkbox" name="" id="whitespace"> пробел</label>
 				</p>
 				<p class="btn">
 					<input type="button" value="Сгенерировать" onclick="generate()">
@@ -23,5 +22,6 @@
 			</form>
 		</div>
 	</div>
+	<script src="main.js"></script>
 </body>
 </html>
