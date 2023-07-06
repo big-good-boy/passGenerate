@@ -63,3 +63,5 @@ function copy() {
 }
 
 generate();
+
+document.getElementById('length').addEventListener("input", () => { generate(); });
