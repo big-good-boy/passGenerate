@@ -13,8 +13,8 @@
 			<form>
 				<p>Длина пароля: <input type="number" name="" id="length" min="8" max="16" value="12"> символов</p>
 				<p class="options">
-					<label><input type="checkbox" name="" id="symbol"> спецсимволы</label>
-					<label><input type="checkbox" name="" id="whitespace"> пробел</label>
+					<label onclick="generate()"><input type="checkbox" name="" id="symbol"> спецсимволы</label>
+					<label onclick="generate()"><input type="checkbox" name="" id="whitespace"> пробел</label>
 				</p>
 				<p class="btn">
 					<input type="button" value="Сгенерировать" onclick="generate()">
